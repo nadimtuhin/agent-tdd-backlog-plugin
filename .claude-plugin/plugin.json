@@ -1,0 +1,21 @@
+{
+  "name": "tdd-backlog",
+  "version": "1.0.0",
+  "description": "Disciplined TDD feature loop with a per-task backlog, checks.sh gate, local-proof-first verification, critic passes, and parallel task execution via subagent waves",
+  "author": {
+    "name": "nadimtuhin"
+  },
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "plugin",
+    "tdd",
+    "backlog",
+    "parallel",
+    "subagents",
+    "orchestration"
+  ],
+  "skills": [
+    "./skills/tdd-backlog/"
+  ]
+}

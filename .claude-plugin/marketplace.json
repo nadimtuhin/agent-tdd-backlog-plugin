@@ -1,0 +1,13 @@
+{
+  "name": "nadim-local",
+  "owner": {
+    "name": "nadimtuhin"
+  },
+  "plugins": [
+    {
+      "name": "tdd-backlog",
+      "source": "./",
+      "description": "TDD backlog loop with parallel subagent waves"
+    }
+  ]
+}
