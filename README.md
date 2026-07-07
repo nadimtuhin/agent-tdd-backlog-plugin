@@ -4,17 +4,26 @@ The disciplined TDD feature loop as a Claude Code plugin: per-task backlog files
 gate, local-proof-first verification, critic passes — and **parallel execution of independent
 TASKs via subagent waves** as a core feature (one orchestrator, N executors, one barrier gate).
 
-## Install (local marketplace)
+## Install
 
 ```
 /plugin marketplace add nadimtuhin/agent-tdd-backlog-plugin
-/plugin install tdd-backlog
+/plugin install tdd-backlog@nadim-local
 ```
 
 Then remove the old standalone skill to avoid duplicate matches:
 
 ```
 rm -rf ~/.claude/skills/tdd-backlog
+```
+
+### Local-path alternative
+
+If you have this repo checked out locally instead:
+
+```
+/plugin marketplace add ~/savvy/agent-tdd-backlog-plugin
+/plugin install tdd-backlog@nadim-local
 ```
 
 ## Usage
@@ -33,5 +42,5 @@ rm -rf ~/.claude/skills/tdd-backlog
 4. Cross-task contracts are locked in the specs before the wave starts.
 5. One failed executor never blocks green siblings — requeue it next wave with its failure pasted in.
 
-Stack-specific variants (`fb-desktop-tdd`, `electron-tdd-backlog`, `nextjs-tdd-backlog`) remain
+Stack-specific variants (a project-specific variant, `electron-tdd-backlog`, `nextjs-tdd-backlog`) remain
 separate skills that specialize this loop with real repo commands; they inherit the wave protocol.
