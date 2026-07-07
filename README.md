@@ -11,20 +11,7 @@ TASKs via subagent waves** as a core feature (one orchestrator, N executors, one
 /plugin install tdd-backlog@nadim-local
 ```
 
-Then remove the old standalone skill to avoid duplicate matches:
 
-```
-rm -rf ~/.claude/skills/tdd-backlog
-```
-
-### Local-path alternative
-
-If you have this repo checked out locally instead:
-
-```
-/plugin marketplace add ~/savvy/agent-tdd-backlog-plugin
-/plugin install tdd-backlog@nadim-local
-```
 
 ## Usage
 
