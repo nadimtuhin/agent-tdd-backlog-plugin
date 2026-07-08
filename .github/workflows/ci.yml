@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Validate plugin.json
-        run: python3 -m json.tool plugin.json
+        run: python3 -m json.tool .claude-plugin/plugin.json
